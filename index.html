@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Sheri Anil Reedy — Backend Engineer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">
+      <h1>Sheri Anil Reedy</h1>
+      <p class="sub">Java Backend Engineer • 3 years • FedEx • Uber Eats • UHG</p>
+    </div>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <h2 class="title">I build reliable, scalable backend systems</h2>
+      <p class="lead">Specialized in Java, Spring Boot, cloud-native architectures (GCP), containerization with Docker and Kubernetes, and production reliability.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="#projects">See projects</a>
+        <a class="btn ghost" href="#resume">Download resume</a>
+      </div>
+      <ul class="chip-list">
+        <li>Core Java</li><li>Spring Boot</li><li>GCP</li><li>Docker</li><li>Kubernetes</li>
+      </ul>
+    </div>
+    <div class="hero-visual">
+      <div class="visual-card floating">
+        <img src=https://media.licdn.com/dms/image/v2/D5603AQEQefM1I9HdWQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1732104044686?e=1767225600&v=beta&t=ANSNox93JELLAyBn5tXui-Y27lt_9v5zW7OjzAPnlPs alt="hero photo">
+        <div class="visual-meta">
+          <h3>Sheri Anil Reedy</h3>
+          <p>Java Backend Developer</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main class="wrap main">
+  <section id="about" class="panel">
+    <h3>About</h3>
+    <p>I am a Java Backend Developer with 3 years of hands-on experience building scalable, secure, and high-performance backend systems. I specialize in designing microservices, building resilient APIs, and deploying cloud-native solutions in production environments.
+
+Across projects with FedEx, Uber Eats, and UHG, I have worked on real-world business-critical systems involving large-scale data flow, asynchronous event processing, distributed systems, and backend reliability.
+
+I enjoy solving complex engineering challenges such as optimizing performance, improving system reliability, designing clean architecture, automating workflows, and strengthening security.</p>
+
+  <section id="skills" class="panel grid-2">
+    <div>
+      <h3>Skills</h3>
+      <ul class="skill-list">
+        <li><strong>Core Java</strong> — solid OOP, collections, concurrency</li>
+        <li><strong>Spring Boot</strong> — microservices, starters, actuator</li>
+        <li><strong>GCP</strong> — compute, Pub/Sub, storage</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Tools & Practices</h3>
+      <ul class="skill-list">
+        <li>Docker & Containerization</li>
+        <li>Kubernetes — deployments, services, helm basics</li>
+        <li>CI/CD, Observability (Prometheus/Grafana)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects" class="panel">
+    <h3>Selected Projects</h3>
+    <div class="cards">
+      <article class="card project-card">
+        <img src=https://download.logo.wine/logo/FedEx/FedEx-Logo.wine.png alt="project image">
+        <div class="card-body">
+          <h4>FedEx — Backend Integration</h4>
+          <p>Built resilient APIs and pub/sub integrations to ensure reliable shipment updates across services.</p>
+        </div>
+      </article>
+      <article class="card project-card">
+        <img src=https://tse1.mm.bing.net/th/id/OIP.18oMd7ulZhCerV_N7xgWYwHaEK?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3alt="project image">
+        <div class="card-body">
+          <h4>Uber Eats — Order Processing</h4>
+          <p>Implemented microservices for order lifecycle with async processing and performance tuning.</p>
+        </div>
+      </article>
+      <article class="card project-card">
+        <img src=https://iconape.com/wp-content/files/kc/261739/svg/unitedhealth-group-seeklogo.com.svg alt="project image">
+        <div class="card-body">
+          <h4>UHG — Healthcare Services</h4>
+          <p>Built secure data pipelines with auditing and role-based access controls.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="resume" class="panel resume-panel">
+    <h3>Resume</h3>
+    <div class="resume-row">
+      <div class="resume-preview">
+        <iframe src="resume.pdf#view=FitH" frameborder="0" loading="lazy"></iframe>
+      </div>
+      <div class="resume-actions">
+        <p>Preview your resume here. You can download the PDF or view the full page.</p>
+        <a class="btn primary" href="resume.pdf" download>Download PDF</a>
+        <a class="btn ghost" href="resume.html" target="_blank">Open printable HTML</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="panel">
+    <h3>Contact</h3>
+    <p>Want to collaborate? Use the form below — submissions will work when deployed to Netlify or via the serverless function.</p>
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
+      <input type="hidden" name="form-name" value="contact">
+      <p style="display:none"><label>Don't fill this out: <input name="bot-field" /></label></p>
+      <div class="form-grid">
+        <input name="name" placeholder="Your name" required>
+        <input name="email" type="email" placeholder="Your email" required>
+        <textarea name="message" placeholder="Message" rows="6" required></textarea>
+      </div>
+      <div style="margin-top:10px;">
+        <button class="btn primary" type="submit">Send message</button>
+        <button class="btn ghost" type="reset">Reset</button>
+      </div>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© 2025 Sheri Anil Reedy — Built with care · Designed for recruiters & engineering leads</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
